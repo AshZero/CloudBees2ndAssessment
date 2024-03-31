@@ -15,8 +15,8 @@ import com.cloudbees.trainapp.entity.User;
 public class TicketPurchaseService {
 
 	@Autowired
-	private TrainAppRepository trainAppRepository;
-	
+	TrainAppRepository trainAppRepository;
+
 	public Receipt submitTicketPurchase(TicketPurchaseRequest request) {
 		Random random = new Random();
 

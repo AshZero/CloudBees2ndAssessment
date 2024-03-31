@@ -10,7 +10,8 @@ import com.cloudbees.trainapp.entity.Receipt;
 public class ReceiptService {
 
 	@Autowired
-	private TrainAppRepository trainAppRepository;
+	TrainAppRepository trainAppRepository;
+
 	public Receipt getReceiptByUserId(Long userId) {
 		return trainAppRepository.getReceiptByUserId(userId);
 	}
