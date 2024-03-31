@@ -6,20 +6,18 @@ public class TicketPurchaseRequest {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private double pricePaid;
+	private String seatNo;
 
-	// Constructors
-	public TicketPurchaseRequest() {
-	}
+
 
 	public TicketPurchaseRequest(String from, String to, String firstName, String lastName, String email,
-			double pricePaid) {
+			String seatNo) {
 		this.from = from;
 		this.to = to;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
-		this.pricePaid = pricePaid;
+		this.seatNo = seatNo;
 	}
 
 	// Getters and Setters
@@ -63,11 +61,11 @@ public class TicketPurchaseRequest {
 		this.email = email;
 	}
 
-	public double getPricePaid() {
-		return pricePaid;
+	public String getSeatNo() {
+		return seatNo;
 	}
 
-	public void setPricePaid(double pricePaid) {
-		this.pricePaid = pricePaid;
+	public void setSeatNo(String seatNo) {
+		this.seatNo = seatNo;
 	}
 }

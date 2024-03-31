@@ -28,7 +28,7 @@ public class Receipt {
         receiptBuilder.append("User: ").append(ticket.getUser().getFirstName()).append(" ")
                       .append(ticket.getUser().getLastName()).append("\n");
         receiptBuilder.append("Email: ").append(ticket.getUser().getEmail()).append("\n");
-        receiptBuilder.append("Price Paid: ").append(ticket.getPricePaid()).append("\n");
+        receiptBuilder.append("Price Paid: ").append(ticket.getSeatNo()).append("\n");
         receiptBuilder.append("Purchase Date: ").append(purchaseDate).append("\n");
         return receiptBuilder.toString();
     }

@@ -5,15 +5,15 @@ public class Ticket {
 	private String from;
 	private String to;
 	private User user;
-	private double pricePaid;
+	private String seatNo;
 
-	public Ticket(Long userId, String from, String to, User user, double pricePaid) {
+	public Ticket(Long userId, String from, String to, User user, String seatNo) {
 		super();
 		this.userId = userId;
 		this.from = from;
 		this.to = to;
 		this.user = user;
-		this.pricePaid = pricePaid;
+		this.seatNo = seatNo;
 	}
 
 	public Long getUserId() {
@@ -48,12 +48,12 @@ public class Ticket {
 		this.user = user;
 	}
 
-	public double getPricePaid() {
-		return pricePaid;
+	public String getSeatNo() {
+		return seatNo;
 	}
 
-	public void setPricePaid(double pricePaid) {
-		this.pricePaid = pricePaid;
+	public void setSeatNo(String seatNo) {
+		this.seatNo = seatNo;
 	}
 
 }
